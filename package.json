@@ -1,0 +1,25 @@
+{
+  "name": "loginsystem",
+  "version": "1.0.0",
+  "description": "MERN Login System",
+  "author": "Bhuvaneshwaran",
+  "license": "ISC",
+  "main": "server.js",
+  "scripts": {
+    "start" : "node server",
+    "server" : "nodemon server",
+    "client" : "npm start --prefix frontend",
+    "dev" : "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.22"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
